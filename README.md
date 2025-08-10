@@ -182,7 +182,7 @@ mvn spring-boot:run
 ---
 ## Hilfestellungen
 - **Unterricht**
-- **Mitschüler*in**: Stefi
+- **Mitschülerin**: Stefi
 - **ChatGPT**: Hilfe bei Strukturierung, Javadoc, Fehlerbehebung, Dokumentation
 - **Internet**: W3Schools, StackOverflow
 
