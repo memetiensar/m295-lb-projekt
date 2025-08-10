@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: f1_postgres
+    environment:
+      POSTGRES_DB: f1db
+      POSTGRES_USER: f1_user
+      POSTGRES_PASSWORD: f1_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - f1_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  f1_data:
