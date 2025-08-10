@@ -64,9 +64,9 @@ com.wiss.m295_backend
 ./mvnw spring-boot:run
 ```
 
-**Port**: http://localhost:8080
-
-**Datenbank**: PostgreSQL (lokal, siehe `application.properties`)
+> **Port**: http://localhost:8080
+>
+> **Datenbank**: PostgreSQL (lokal, siehe `application.properties`)
 
 ---
 ## Datenbank-Konfiguration (application.properties)
