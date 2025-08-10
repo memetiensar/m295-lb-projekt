@@ -182,7 +182,7 @@ mvn spring-boot:run
 ---
 ## Hilfestellungen
 - **Unterricht**
-- **Mitschülerin**: Stefi unterstützung bei Strukturierung des Codes und Fehlerbehebung
+- **Mitschülerin**: Unterstützung durch Stefi bei Strukturierung des Codes und Fehlerbehebung
 - **ChatGPT**: Hilfe bei Strukturierung, Javadoc, Fehlerbehebung, Dokumentation
 - **Internet**: W3Schools, StackOverflow
 
