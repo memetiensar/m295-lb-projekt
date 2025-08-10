@@ -1,4 +1,4 @@
-# Formel1-API – M295 Abschlussprojekt
+# Formel1 – M295 Abschlussprojekt
 
 Diese README dient gleichzeitig als Projektdokumentation gemäss der Vorgabe vom Modul M295.
 
