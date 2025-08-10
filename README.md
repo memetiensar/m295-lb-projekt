@@ -18,9 +18,9 @@ Das Erfassen, Bearbeiten und Löschen von Fahrer-Anfragen
 Projektstruktur
 
 m295-backend
-├── src/main/java/com/wiss/m295_backend  → Spring Boot REST-API (Java)
-├── docker-compose.yml                   → Datenbank-Setup mit PostgreSQL
-└── README.md                            → Projektdokumentation
+src/main/java/com/wiss/m295_backend   Spring Boot REST-API (Java)
+docker-compose.yml                    Datenbank-Setup mit PostgreSQL
+README.md                             Projektdokumentation
 Das Projekt besteht aus einem Spring Boot Backend, das über eine REST-API Daten verwaltet. Eine mögliche Frontend-Anbindung kann z. B. mit React erfolgen.
 
 Backend-Übersicht (Spring Boot)
@@ -52,17 +52,14 @@ Git
 Architektur
 Das Projekt ist modular nach Best Practices aufgebaut:
 
-scss
-Kopieren
-Bearbeiten
 com.wiss.m295_backend
-├── controller
-├── dto
-├── entity
-├── exception (GlobalErrorHandling)
-├── mapper
-├── repository
-└── service
+controller
+dto
+entity
+exception (GlobalErrorHandling)
+mapper
+repository
+service
 Startanleitung
 Backend starten (Spring Boot)
 
@@ -80,26 +77,27 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 Datenmodell (Klassendiagramm)
 
 Driver
-└── id
-└── firstName
-└── lastName
-└── team
-└── nationality
-└── dateOfBirth
-└── number
+id
+firstName
+lastName
+team
+nationality
+dateOfBirth
+number
 
 Favorite
-└── id
-└── driverId → Referenz auf Driver
-└── comment
+id
+driverId → Referenz auf Driver
+comment
 
 Request
-└── id
-└── firstName, lastName, email, phone
-└── driverId → Referenz auf Driver
-└── comment
+id
+firstName, lastName, email, phone
+driverId → Referenz auf Driver
+comment
 API-Endpunkte
-🏎️ Fahrer
+
+Fahrer
 Methode	Pfad	Beschreibung
 GET	/drivers	Alle Fahrer anzeigen
 GET	/drivers/{id}	Einzelnen Fahrer anzeigen
@@ -132,6 +130,7 @@ Fehler werden zentral im GlobalExceptionHandler behandelt:
   "message": "Validation failed: [fieldName] is required",
   "timestamp": "2025-08-10T10:00:00"
 }
+
 Testplan
 Testfall	Erwartetes Ergebnis:
 Alle Fahrer abrufen (/drivers)	Liste der Fahrer wird korrekt zurückgegeben
